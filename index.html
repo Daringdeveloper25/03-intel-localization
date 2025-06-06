@@ -173,6 +173,73 @@
     <p>Scroll to view timeline | Hover over cards to learn more!</p>
   </div>
 
+  <!-- 3-column layout using Bootstrap grid -->
+  <div class="container my-5">
+    <div class="row text-center">
+      <!-- Column 1 -->
+      <div class="col-md-4 mb-4">
+        <!-- Placeholder heading -->
+        <h2>RISE Strategy</h2>
+        <!-- Placeholder icon (Bootstrap icon or emoji for beginners) -->
+        <div style="font-size: 2.5rem;">🌱</div>
+        <!-- Short text shown at first -->
+        <div class="column-short">
+          <p>
+            Intel's RISE strategy sets big goals for a better future.
+          </p>
+        </div>
+        <!-- Long text hidden at first -->
+        <div class="column-long d-none">
+          <p>
+            Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
+            Intel sets ambitious 2030 goals, including driving industry-wide 
+            progress on climate action, water stewardship, and waste reduction.
+          </p>
+        </div>
+        <!-- Learn More button -->
+        <button class="btn btn-primary mt-2 column-learn-more-btn">Learn More</button>
+      </div>
+      <!-- Column 2 -->
+      <div class="col-md-4 mb-4">
+        <h2>Commitment</h2>
+        <div style="font-size: 2.5rem;">💡</div>
+        <div class="column-short">
+          <p>
+            Intel pledged to reach net-zero emissions by 2040.
+          </p>
+        </div>
+        <div class="column-long d-none">
+          <p>
+            In 2022, Intel pledged to achieve net-zero greenhouse gas emissions 
+            (Scope 1 and 2) by 2040. This commitment builds on decades of 
+            environmental initiatives and partnerships across the semiconductor 
+            industry.
+          </p>
+        </div>
+        <button class="btn btn-primary mt-2 column-learn-more-btn">Learn More</button>
+      </div>
+      <!-- Column 3 -->
+      <div class="col-md-4 mb-4">
+        <h2>Water &amp; Waste</h2>
+        <div style="font-size: 2.5rem;">🔬</div>
+        <div class="column-short">
+          <p>
+            Intel saves water and recycles materials every year.
+          </p>
+        </div>
+        <div class="column-long d-none">
+          <p>
+            Intel conserves billions of gallons of water annually and 
+            collaborates with local communities to restore watersheds.
+            Intel also upcycles and recycles materials to reduce waste and 
+            advance a circular economy.
+          </p>
+        </div>
+        <button class="btn btn-primary mt-2 column-learn-more-btn">Learn More</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Learn More Carousel Section -->
   <div class="container my-5">
     <!-- Carousel heading -->
@@ -183,18 +250,68 @@
     <div id="learnMoreCarousel" class="carousel slide" data-bs-ride="carousel">
       <!-- Add padding and center text in the carousel-inner so text doesn't overlap arrows and is centered -->
       <div class="carousel-inner px-5 text-center">
-        <!-- Carousel Item 1 -->
+        <!-- Carousel items in random order (example order below) -->
+        <!-- Carousel Item: Net-Zero By 2040 (2022) -->
         <div class="carousel-item active">
+          <div class="card p-4">
+            <h4 class="fw-bold mb-2">Net-Zero By 2040 (2022)</h4>
+            <div class="learn-more-short">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                Intel aims for net-zero greenhouse gas emissions by 2040.
+              </p>
+            </div>
+            <div class="learn-more-long d-none">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                Intel aims for net-zero greenhouse gas emissions by 2040, focusing on Scope 1 and 2 emissions. Intel invests in renewable energy and efficient manufacturing, plans to use 100% renewable electricity globally, and encourages suppliers to adopt green practices. The company is also working to reduce water usage and waste in its factories. Intel publishes annual sustainability reports to track progress and inspire other companies to take climate action.
+              </p>
+            </div>
+            <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
+          </div>
+        </div>
+        <!-- Carousel Item: 386 Processor (1985) -->
+        <div class="carousel-item">
+          <div class="card p-4">
+            <h4 class="fw-bold mb-2">386 Processor (1985)</h4>
+            <div class="learn-more-short">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                The 386 processor brought 32-bit computing to PCs.
+              </p>
+            </div>
+            <div class="learn-more-long d-none">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                The 386 processor brought 32-bit computing to personal computers, allowing for better multitasking and performance. It enabled more advanced software and operating systems. The 386 was a big step forward in making computers more powerful and user-friendly.
+              </p>
+            </div>
+            <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
+          </div>
+        </div>
+        <!-- Carousel Item: Renewable Electricity (2023) -->
+        <div class="carousel-item">
+          <div class="card p-4">
+            <h4 class="fw-bold mb-2">Renewable Electricity (2023)</h4>
+            <div class="learn-more-short">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                Intel achieved 99% renewable electricity usage worldwide.
+              </p>
+            </div>
+            <div class="learn-more-long d-none">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                Intel achieved 99% renewable electricity usage worldwide in 2023. This helped drastically lower carbon emissions and move closer to long-term sustainability goals. Intel continues to invest in clean energy and encourages its partners to do the same.
+              </p>
+            </div>
+            <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
+          </div>
+        </div>
+        <!-- Carousel Item: Intel Founded (1968) -->
+        <div class="carousel-item">
           <div class="card p-4">
             <h4 class="fw-bold mb-2">Intel Founded (1968)</h4>
             <div class="learn-more-short">
-              <!-- Only a teaser before Learn More -->
               <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
                 Intel was founded by Robert Noyce and Gordon Moore.
               </p>
             </div>
             <div class="learn-more-long d-none">
-              <!-- All facts after Learn More is clicked -->
               <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
                 Intel was founded by Robert Noyce and Gordon Moore. The company was originally named NM Electronics. The name "Intel" comes from "Integrated Electronics." Intel helped pioneer the Silicon Valley tech boom, and its first offices were in Mountain View, California. The founders were both previously involved with Fairchild Semiconductor, a key company in early computer chip development. Intel quickly became a leader in memory chips before moving into microprocessors.
               </p>
@@ -202,7 +319,41 @@
             <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
           </div>
         </div>
-        <!-- Carousel Item 2 -->
+        <!-- Carousel Item: Sustainability Summit (2024) -->
+        <div class="carousel-item">
+          <div class="card p-4">
+            <h4 class="fw-bold mb-2">Sustainability Summit (2024)</h4>
+            <div class="learn-more-short">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                Intel hosted its first Sustainability Summit in 2024.
+              </p>
+            </div>
+            <div class="learn-more-long d-none">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                Intel hosted its first Sustainability Summit in 2024, bringing together suppliers, government officials, and industry leaders. The summit focused on next-generation sustainable semiconductor manufacturing and encouraged collaboration for a greener future.
+              </p>
+            </div>
+            <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
+          </div>
+        </div>
+        <!-- Carousel Item: Peak GHG Emissions (2006) -->
+        <div class="carousel-item">
+          <div class="card p-4">
+            <h4 class="fw-bold mb-2">Peak GHG Emissions (2006)</h4>
+            <div class="learn-more-short">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                2006 was Intel's highest year for greenhouse gas emissions.
+              </p>
+            </div>
+            <div class="learn-more-long d-none">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                2006 was Intel's highest year for greenhouse gas emissions. After this, Intel invested in chemical abatement, renewable energy, and energy-efficient manufacturing to reduce its environmental impact. These efforts helped lower emissions and set the stage for future sustainability goals.
+              </p>
+            </div>
+            <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
+          </div>
+        </div>
+        <!-- Carousel Item: First Microprocessor (1971) (again, for demonstration of randomness) -->
         <div class="carousel-item">
           <div class="card p-4">
             <h4 class="fw-bold mb-2">First Microprocessor (1971)</h4>
@@ -219,18 +370,35 @@
             <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
           </div>
         </div>
-        <!-- Carousel Item 3 -->
+        <!-- Carousel Item: 8086 Processor (1978) -->
         <div class="carousel-item">
           <div class="card p-4">
-            <h4 class="fw-bold mb-2">Net-Zero By 2040 (2022)</h4>
+            <h4 class="fw-bold mb-2">8086 Processor (1978)</h4>
             <div class="learn-more-short">
               <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
-                Intel aims for net-zero greenhouse gas emissions by 2040.
+                The 8086 processor started the x86 architecture.
               </p>
             </div>
             <div class="learn-more-long d-none">
               <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
-                Intel aims for net-zero greenhouse gas emissions by 2040, focusing on Scope 1 and 2 emissions. Intel invests in renewable energy and efficient manufacturing, plans to use 100% renewable electricity globally, and encourages suppliers to adopt green practices. The company is also working to reduce water usage and waste in its factories. Intel publishes annual sustainability reports to track progress and inspire other companies to take climate action.
+                The 8086 processor started the x86 architecture, which is still used in most computers today. It was a 16-bit processor and was used in the original IBM PC. The x86 design helped make personal computers popular and powerful.
+              </p>
+            </div>
+            <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
+          </div>
+        </div>
+        <!-- Carousel Item: RISE Statement (2020) -->
+        <div class="carousel-item">
+          <div class="card p-4">
+            <h4 class="fw-bold mb-2">RISE Statement (2020)</h4>
+            <div class="learn-more-short">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                In 2020, Intel introduced its RISE strategy.
+              </p>
+            </div>
+            <div class="learn-more-long d-none">
+              <p style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                In 2020, Intel introduced its RISE strategy. RISE stands for Responsible, Inclusive, Sustainable, and Enabling. The strategy sets goals for 2030, like advancing diversity, reducing greenhouse gas emissions, saving water, and helping others through technology. Intel's RISE statement encourages working together to solve global challenges and make a positive impact.
               </p>
             </div>
             <button class="btn btn-link p-0 learn-more-btn" type="button">Learn More</button>
@@ -289,16 +457,25 @@
 
     // This function checks the current language and sets RTL if needed
     function updateDirection() {
-      // Get the <html> element
       var html = document.documentElement;
-      // Get the current language code (first two letters)
       var lang = html.getAttribute('lang') || '';
       lang = lang.slice(0,2).toLowerCase();
-      // If the language is RTL, set dir="rtl", otherwise set dir="ltr"
       if (rtlLanguages.includes(lang)) {
         html.setAttribute('dir', 'rtl');
+        // Set carousel direction for RTL
+        var carousel = document.getElementById('learnMoreCarousel');
+        if (carousel) {
+          carousel.setAttribute('dir', 'rtl');
+        }
+        // The timeline and all content will also follow RTL because <html dir="rtl">
       } else {
         html.setAttribute('dir', 'ltr');
+        // Set carousel direction for LTR
+        var carousel = document.getElementById('learnMoreCarousel');
+        if (carousel) {
+          carousel.setAttribute('dir', 'ltr');
+        }
+        // The timeline and all content will also follow LTR because <html dir="ltr">
       }
     }
 
@@ -314,13 +491,39 @@
       });
     });
 
-    // Start observing the <html> element for attribute changes
     observer.observe(document.documentElement, { attributes: true });
 
-    // Also check every second in case a translation tool changes text but not the lang attribute
     setInterval(updateDirection, 1000);
-  </script>
 
+    // Fix Bootstrap carousel direction for RTL/LTR and always start at the first card
+    document.addEventListener('DOMContentLoaded', function() {
+      var carousel = document.getElementById('learnMoreCarousel');
+      if (!carousel) return;
+      var carouselInner = carousel.querySelector('.carousel-inner');
+      // Always remove 'flex-row-reverse' so order is always left-to-right in HTML
+      if (carouselInner) {
+        carouselInner.classList.remove('flex-row-reverse');
+      }
+      // Always set the first carousel item as active and remove active from others
+      var items = carouselInner.querySelectorAll('.carousel-item');
+      items.forEach(function(item, idx) {
+        if (idx === 0) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      // Force Bootstrap carousel to reset to the first slide on load
+      if (window.bootstrap && window.bootstrap.Carousel) {
+        var bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel);
+        bsCarousel.to(0);
+      } else if (window.jQuery && window.jQuery.fn.carousel) {
+        // Fallback for jQuery-based Bootstrap
+        window.jQuery(carousel).carousel(0);
+      }
+    });
+  </script>
   <!-- JavaScript for Learn More expand/collapse in carousel -->
   <script>
     // This code lets users click "Learn More" to show more facts, or "Show Less" to hide them
@@ -336,6 +539,26 @@
         } else {
           longFacts.classList.add('d-none');
           shortFacts.classList.remove('d-none');
+          btn.textContent = 'Learn More';
+        }
+      });
+    });
+
+    // This code lets users click "Learn More" in the columns to show more text, or "Show Less" to hide it
+    document.querySelectorAll('.column-learn-more-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        // Find the parent column (col-md-4)
+        var col = btn.closest('.col-md-4');
+        var shortText = col.querySelector('.column-short');
+        var longText = col.querySelector('.column-long');
+        // If the long text is hidden, show it and hide the short text
+        if (longText.classList.contains('d-none')) {
+          longText.classList.remove('d-none');
+          shortText.classList.add('d-none');
+          btn.textContent = 'Show Less';
+        } else {
+          longText.classList.add('d-none');
+          shortText.classList.remove('d-none');
           btn.textContent = 'Learn More';
         }
       });
